@@ -1,0 +1,284 @@
+ @media all and (max-width: 1024px) {
+    h5 {
+        font-size: 16px;
+    }
+    
+    .alert {
+        padding: 6px 10px;
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+    
+    table,
+    table.dataTable {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+    }
+ 
+    .header_section {
+        height: 40px;
+    }
+     
+    .header_section span.display-7 {
+        font-size: 14px;
+        padding: 0px !important;
+    }
+    
+    .header_section a.menu-collapse {
+        margin-top: 10px !important;
+    }
+    
+    .profile-thumb-small {
+        line-height: 31px;
+        height: 30px;
+        font-size: 14px;
+    }
+    
+    .top-notificationicons .dropdown-menu {
+        margin-top: -18px;
+    }
+    
+    .logo_wr.adminlogo.my-3 {
+        margin: 0px !important;
+    }
+    
+    .admin_menus .list-group-item a{
+        padding: 10px 10px 10px 50px;
+    }
+    
+    .settings_page_design,
+    .css_editor,
+    .add_blog_design {
+        padding: 10px 0px 150px 0px;
+    }
+    
+    .blog_list_design .custom_lbloglist .custom-select {
+        max-width: 150px;
+    }
+    
+    .blog_list_design .custom_lbloglist .custom-checkbox {
+        right: 12px;
+    }
+    
+    #blog_list_table_filter {
+        margin-bottom: 10px;
+    }
+    
+    .admin_menus .list-group-item a i {
+        top: 14px;
+    }
+    
+    .css_editor h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .css_editor .last_modified {
+        padding: 4px 15px;
+        line-height: 30px;
+    }
+    
+    .css_editor .last_modified .btn {
+        padding: 4px 20px;
+    }
+    
+    form.css_editor.header_editor {
+        padding-bottom: 20px;
+    }
+    
+    form.css_editor.footer_editor {
+        margin-bottom: 150px;
+    }
+    
+    .settings_page_design button {
+        margin-right: 0px;
+    } 
+    
+    .welcome_panel {
+        top: 15px;
+        margin-top: 0;
+        padding-left: 160px;
+        background-size: 100px;
+    }    
+    
+    .welcome_panel a.btn.btn-primary {
+        padding: 6px 10px;
+    }
+}
+
+
+ @media all and (max-width: 768px) {
+    .admin_menus {
+        width: 100px;
+    }
+
+    .logo_wr.adminlogo {
+        padding-left: 13px;
+    }
+
+    .admin_menus .list-group-item a {
+        font-size: 12px;
+        padding: 24px 0 15px 0;
+        text-align: center; 
+    }
+
+    .admin_menus .list-group-item a i {
+        font-size: 16px;
+        left: 40px;
+        top: 8px;
+    }
+
+    .logo_wr.adminlogo a {
+        font-size: 15px;
+    } 
+
+    .page-dashboard {
+        padding-left: 100px;
+    }  
+    
+    #blog_list_table_filter {
+        width: 100%; 
+    }
+    
+    .welcome_panel h2 {
+        font-size: 26px;
+        line-height: 28px;
+    }
+    
+    .welcome_panel h3 {
+        font-size: 24px;
+        line-height: 26px;
+    }
+    
+    /*Signup form*/
+    .form-design .form_logo img {
+        width: 150px; 
+    }
+    
+    .login_form_page, 
+    .signup_form_page {
+        overflow: scroll;
+        height: 100vh;
+    }
+ } 
+ 
+ @media all and (max-width: 680px) {
+    .CodeMirror, .css_editor textarea {
+        height: 180px !important; 
+    }
+     
+    footer.admin_footer {
+        padding: 6px 0 !important;
+        font-size: 12px;
+        line-height: 18px;
+        height: 30px;
+    }
+    
+    .blog_list_design .custom_lbloglist .custom-select {
+        max-width: 130px;
+    }
+     
+ }
+ 
+ @media all and (max-width: 480px) {
+    .admin_menus {
+        width: 10px;
+        overflow: hidden;
+    }
+
+    .page-dashboard {
+        padding-left: 10px;
+    }
+    
+    .shortmenu .admin_menus {
+        width: 150px;
+    }
+    
+    .admin_menus .list-group-item a, 
+    .shortmenu .admin_menus .list-group-item a {
+        font-size: 12px;
+        padding: 10px 0 10px 44px;
+        text-align: left;
+    }
+    
+    .admin_menus .list-group-item a i,
+    .shortmenu .admin_menus .list-group-item a i {
+        font-size: 16px;
+        position: absolute;
+        left: 15px;
+        top: 12px;
+    }
+    
+    .shortmenu .page-dashboard {
+        padding-left: 150px;
+    }
+    
+    .col-12.top-notificationicons {
+        max-width: 100px;
+        flex: 0 0 100px;
+        position: absolute;
+        right: 0;
+    }
+    
+    .form-row {
+        display: block;
+    }
+
+    .blog_list_design .btn.btn-primary {
+        margin-bottom: 15px;
+        padding: 6px 14px;
+    }
+    
+    .blog_list_design .custom_lbloglist .custom-select {
+        max-width: 211px;
+    }
+    
+    .CodeMirror, .css_editor textarea {
+        height: 300px !important;
+    }
+    
+    .welcome_panel {
+        padding: 115px 15px 15px 0px ; 
+        background-position: center top;
+    }
+    
+    .welcome_panel .btn {
+        margin-bottom: 10px;
+    }
+    
+    .header_section {
+        padding-left: 0;
+    }
+    
+    .admin_footer ul.footer_social_links {
+        position: fixed;
+        right: 16px;
+        bottom: 5px;
+    }
+    
+    .profile_page_design {
+        margin-top: 70px;
+    }
+    
+    .profile_page_design .profile_img {
+        width: 70px;
+        height: 70px; 
+        top: -80px;
+    }
+    
+    .add_blog_design hr {
+        display:none; 
+    }
+ }
+ 
+ 
+ @media all and (max-width: 360px) {
+    .blog_list_design .custom_lbloglist .custom-select {
+        max-width: 83%;
+        width: 250px;
+        margin-bottom: 14px;
+    }
+ }
