@@ -13,6 +13,8 @@
 
         } else if($blogsavestatus==3){     
             echo '<div class="alert alert-danger">Invalid file format in custom url.</div>';
+        } else if($blogsavestatus==4){     
+            echo '<div class="alert alert-danger">Unable to insert blog. Blog description not given. </div>';
         } else {
             echo "<div class='alert alert-danger'>Unable to insert blog. Please refresh page and try again.</div>" ;  
         } 

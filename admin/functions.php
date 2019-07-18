@@ -1,13 +1,11 @@
 <?php
-
-// Username and Password : superadmin
  
 //Remove Error Reporting
 error_reporting(E_ERROR | E_PARSE);
 
 /*  
- * Session Start;
- */    
+ * Session Start; 
+ */      
 session_start();     
  
 //Current Working Directory
@@ -44,7 +42,8 @@ function _site_url(){
     } else {
         return SITEURL; 
     }
-}
+} 
+
 
 /*  
  * Return Site URL.

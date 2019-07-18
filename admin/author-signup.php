@@ -52,6 +52,8 @@ $bloginfo = blog_info();
                             $pageurl = site_url('/');  
                             echo "<div class='alert alert-success text-center'>You are successfully Registered. <a href='".$pageurl."'>Login here</a></div>" ;   
                             
+                            //Redirect 
+//                            header("Location:$pageurl");  
                         
                         } else {  
                             echo "<div class='alert alert-danger text-center'>User already exists with given email address.</div>" ;   
@@ -60,7 +62,7 @@ $bloginfo = blog_info();
                         $login = $user->check_login();
                         if($login) {
                             $dashboardurl = site_url('/admin.php'); 
-                            redirect_script($dashboardurl);  
+                            header("Location:$dashboardurl");    
                     }  
                     }  
                     ?>      

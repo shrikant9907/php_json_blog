@@ -1,16 +1,16 @@
 <?php
 /**
- * Blogs
+ * Blogs 
  *
  * @author Shrikant Yadav
  */
 class Blogs {    
  
     /*
-     * Function Add User 
+     * Function Add User  
      */
     public function add_blog() { 
-          
+           
         $blog_title         = trim($_POST['blog_title']); 
         $blog_sub_title     = trim($_POST['blog_sub_title']); 
         $custom_url_switch  = trim($_POST['custom_url_switch']); 
@@ -23,14 +23,14 @@ class Blogs {
         $uploaded_file   = $_FILES['blog_featured_image']; 
         $featured_image_url = '';
 
-        // File Upload
+        // File Upload 
         $filedata = $this->upload($uploaded_file); 
         if($filedata['status']==1) {
             $featured_image_url = $filedata['location'];
         }  
 
         // Check if all required value given
-        if(($blog_title!='') && ($blog_content!='') && ($blog_author!='') ) :  
+        if(($blog_title!='') && ($blog_content!='') && ($blog_post_status!='') ) { 
             
             if(!$custom_url_switch) {           
                 $custom_blog_url = string_to_slug($blog_title).'.html';        
@@ -59,7 +59,7 @@ class Blogs {
             } else {  
                 $fstatus = 1;  
             }
-            if($fstatus==1) {  
+            if($fstatus==1) {   
         
             if(SYSTEMMODE=='TEST') :     
                 console_log('Add new blog.');
@@ -125,12 +125,20 @@ class Blogs {
                 }   
                 
             } if($fstatus==3) {    
+                if(SYSTEMMODE=='TEST') :     
+                        console_log('New blog not inserted 3');
+                    endif; 
                 return $fstatus;
             } else { 
+                if(SYSTEMMODE=='TEST') :     
+                        console_log('New blog not inserted. 4');
+                    endif; 
                 return 0; 
             }
 
-        endif; 
+        } else {
+            return 4;
+        }
 
     } 
     

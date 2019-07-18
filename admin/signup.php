@@ -63,8 +63,7 @@ if($fusrstatu==0) {
                         $login = $user->check_login(); 
                         if($login) {
                             $dashboardurl = admin_url('/admin.php'); 
-                            redirect_script($dashboardurl);  
-                    
+                            header("Location:$dashboardurl");    
                     }  
                     }  
                     ?>       
