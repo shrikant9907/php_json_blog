@@ -5,7 +5,7 @@
  
 // Not Required, But it can be use to forcefully overwrite the URL.
 // If the domain transfer from one domain to another.  
-define( 'SITEURL', 'http://localhost/phpjsonlive' );          
+define( 'SITEURL', 'http://base1.tutorsincity.com/php-json-blog' );          
  
 /*
  * Custom JSON Database
