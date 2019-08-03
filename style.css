@@ -415,13 +415,7 @@ h2.blog_page_heading {
     margin-right: 9px;
 }
 
+
 .social_share_option a:hover {
 	background: #f2f2f2;
-}
-
-@media (max-width: 480px){
-  .custom_blog_html img {
-	max-width: 100%;
-    height: 100% !important;
-  }
 }

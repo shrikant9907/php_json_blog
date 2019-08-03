@@ -774,8 +774,8 @@ class Users {
 
         // Redirect to Login Page
         $loginurl = site_url();    
-        header("Location:$loginurl"); 
-
+        redirect_script($loginurl);  
+                    
     } 
  
 } 
