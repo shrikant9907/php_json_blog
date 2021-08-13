@@ -478,7 +478,7 @@ class Users {
     }    
 
     /*
-    * Get Author By Username  
+    * Get Author By Username 
     */
     public function admin_login_by_username($username, $md5pass){     
         global $databasename;
