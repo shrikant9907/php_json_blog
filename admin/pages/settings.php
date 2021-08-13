@@ -9,7 +9,6 @@ if(isset($_POST['save_bloginfo'])) {
 } 
 
 $bloginfo = $settings->get();   
-
 /*
  * Regenerate HTML Templates
  */

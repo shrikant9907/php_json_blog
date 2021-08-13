@@ -15,6 +15,10 @@ class Settings {
         $dbfilejson = file_get_contents($dbfilepath);
         $dbfilearry = json_decode($dbfilejson);
         
+        if ( empty((array) $dbfilearry['0'])) {
+            console_log('Settings Object Empty.');
+        }    
+
         return $dbfilearry['0'];        
     } 
 
@@ -25,9 +29,9 @@ class Settings {
   
         $allsettings = $this->get();
         
-        $newarr['facebook']     = $allsettings->blog_fb_url; 
-        $newarr['instagram']    = $allsettings->blog_insta_url; 
-        $newarr['twitter']      = $allsettings->blog_twitter_url; 
+        $newarr['facebook']     = $allsettings->blog_fb_url ? $allsettings->blog_fb_url : '#' ; 
+        $newarr['instagram']    = $allsettings->blog_insta_url ? $allsettings->blog_insta_url : '#'; 
+        $newarr['twitter']      = $allsettings->blog_twitter_url ? $allsettings->blog_twitter_url : '#'; 
         
         return $newarr;   
         
@@ -39,10 +43,13 @@ class Settings {
     public function update($posts) {  
       
         if($posts) {
+            $newsetting = (object)[];
             foreach($posts as $p_key => $post) {
-                if($p_key=='admin_email') { 
+                if($p_key=='admin_email') {
+                    if (strtolower(trim($post))) 
                     $newsetting->$p_key = strtolower(trim($post));
                 } else {
+                    if ($post)
                     $newsetting->$p_key = $post;
                 }
             }      
